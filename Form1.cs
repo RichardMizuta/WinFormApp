@@ -1,10 +1,38 @@
+using System.DirectoryServices.ActiveDirectory;
+
 namespace WinFormApp1
 {
-    public partial class Form1 : Form
+    public partial class Owner : Form
     {
-        public Form1()
+        public Owner()
         {
             InitializeComponent();
+        }
+
+        private void B_Syokyu_Click(object sender, EventArgs e)
+        {
+            Owner fMain = new Owner();
+            fMain.Show();
+            Hide();
+
+        }
+        private void B_Chukyu_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void B_Jyokyu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void B_Close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void B_Syokyu_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

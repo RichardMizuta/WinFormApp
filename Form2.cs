@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace WinFormApp1
 {
-    public partial class Form2 : Form
+    public partial class F_Main : Form
     {
-        public Form2()
+        public F_Main()
         {
             InitializeComponent();
+        }
+
+        private void F_Main_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void F_Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Owner.Show();
         }
     }
 }

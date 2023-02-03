@@ -11,10 +11,6 @@ namespace WinFormApp1
 
         private void B_Syokyu_Click(object sender, EventArgs e)
         {
-            Owner fMain = new Owner();
-            fMain.Show();
-            Hide();
-
         }
         private void B_Chukyu_Click(object sender, EventArgs e)
         {
@@ -32,7 +28,9 @@ namespace WinFormApp1
 
         private void B_Syokyu_Click_1(object sender, EventArgs e)
         {
-
+            F_Main fMain = new F_Main();
+            fMain.Show();
+            Hide();
         }
     }
 }

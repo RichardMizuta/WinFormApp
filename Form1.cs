@@ -8,7 +8,6 @@ namespace WinFormApp1
         {
             InitializeComponent();
         }
-
         private void B_Syokyu_Click(object sender, EventArgs e)
         {
         }
@@ -31,6 +30,15 @@ namespace WinFormApp1
             F_Main fMain = new F_Main();
             fMain.Show();
             Hide();
+        }
+
+        private void Owner_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void Owner_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
         }
     }
 }

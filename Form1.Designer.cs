@@ -87,6 +87,7 @@
             this.Controls.Add(this.B_Syokyu);
             this.Name = "Owner";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Owner_Load);
             this.ResumeLayout(false);
 
         }

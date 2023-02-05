@@ -73,6 +73,7 @@
             this.B_Start.TabIndex = 3;
             this.B_Start.Text = "スタート";
             this.B_Start.UseVisualStyleBackColor = false;
+            this.B_Start.Click += new System.EventHandler(this.B_Start_Click);
             // 
             // PG_Jikan
             // 
@@ -91,6 +92,7 @@
             this.P_Enemy.Name = "P_Enemy";
             this.P_Enemy.Size = new System.Drawing.Size(613, 314);
             this.P_Enemy.TabIndex = 5;
+            this.P_Enemy.Paint += new System.Windows.Forms.PaintEventHandler(this.P_Enemy_Paint);
             // 
             // F_Main
             // 

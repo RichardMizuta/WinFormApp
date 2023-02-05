@@ -47,7 +47,7 @@ namespace WinFormApp1
         {
             var intTop = _rnd.Next(_enemyOwner.Size.Height - _pbImgEnemy.Size.Height);
             _pbImgEnemy.Top = intTop;
-            var intLeft = _rnd.Next(_enemyOwner.Size.Height - _-_pbImgEnemy.Size.Height);
+            var intLeft = _rnd.Next(_enemyOwner.Size.Height - _pbImgEnemy.Size.Height);
             _pbImgEnemy.Left = intLeft;
 
             _intMovePattern = _rnd.Next(1, 4);
@@ -57,14 +57,14 @@ namespace WinFormApp1
             {
                 case 1:
                     _pbImgEnemy.Image = Image.FromFile("enemy1.gif");
-                    _intTokuten = 500;
+                    _intTokuten = 3000;
                     break;
                 case 2:
-                    _pbImgEnemy.Image = Image.FromFile("enemy1.gif");
-                    _intTokuten = 500;
+                    _pbImgEnemy.Image = Image.FromFile("enemy2.gif");
+                    _intTokuten = 1000;
                     break;
                 case 3:
-                    _pbImgEnemy.Image = Image.FromFile("enemy1.gif");
+                    _pbImgEnemy.Image = Image.FromFile("enemy3.gif");
                     _intTokuten = 500;
                     break;
             }

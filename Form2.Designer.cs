@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.L_Jikan = new System.Windows.Forms.Label();
             this.L_Tokuten = new System.Windows.Forms.Label();
             this.L_Sum = new System.Windows.Forms.Label();
             this.B_Start = new System.Windows.Forms.Button();
             this.PG_Jikan = new System.Windows.Forms.ProgressBar();
             this.P_Enemy = new System.Windows.Forms.Panel();
+            this.T_Enemy = new System.Windows.Forms.Timer(this.components);
+            this.T_Jikan = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // L_Jikan
@@ -94,6 +97,16 @@
             this.P_Enemy.TabIndex = 5;
             this.P_Enemy.Paint += new System.Windows.Forms.PaintEventHandler(this.P_Enemy_Paint);
             // 
+            // T_Enemy
+            // 
+            this.T_Enemy.Interval = 1000;
+            this.T_Enemy.Tick += new System.EventHandler(this.T_Enemy_Tick);
+            // 
+            // T_Jikan
+            // 
+            this.T_Jikan.Interval = 1000;
+            this.T_Jikan.Tick += new System.EventHandler(this.T_Jikan_Tick);
+            // 
             // F_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -121,5 +134,7 @@
         private Button B_Start;
         private ProgressBar PG_Jikan;
         private Panel P_Enemy;
+        private System.Windows.Forms.Timer T_Enemy;
+        private System.Windows.Forms.Timer T_Jikan;
     }
 }

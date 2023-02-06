@@ -54,6 +54,7 @@
             this.B_Chukyu.TabIndex = 1;
             this.B_Chukyu.Text = "中級";
             this.B_Chukyu.UseVisualStyleBackColor = true;
+            this.B_Chukyu.Click += new System.EventHandler(this.B_Chukyu_Click_1);
             // 
             // B_Jyokyu
             // 
@@ -64,6 +65,7 @@
             this.B_Jyokyu.TabIndex = 2;
             this.B_Jyokyu.Text = "上級";
             this.B_Jyokyu.UseVisualStyleBackColor = true;
+            this.B_Jyokyu.Click += new System.EventHandler(this.B_Jyokyu_Click_1);
             // 
             // B_Close
             // 

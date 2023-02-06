@@ -280,5 +280,13 @@ namespace WinFormApp1
 
             }
         }
+        public void EnemyDown()
+        {
+            _RandPlace();
+        }
+        public int GetTokuten()
+        {
+            return _intTokuten;
+        }
     }
 }

@@ -26,7 +26,7 @@ namespace WinFormApp1
             L_Sum.Text = "0";
             T_Enemy.Interval = EnmTim;
             PG_Jikan.Maximum = GmTim / 1000;
-            PG_Jikan.Value = PG_Jikan.Minimum;
+            PG_Jikan.Value = PG_Jikan.Maximum;
         }
         public F_Main()
         {
@@ -49,6 +49,7 @@ namespace WinFormApp1
             for (int i = 0; i <= Enms -1; i++)
             {
                 _enemies.Add(new CEnemy(P_Enemy, _rnd));
+                ((CEnemy)_enemies[i]).OnClick += new EventHandler(EnmOnClick);
                 Application.DoEvents();
             }
             T_Enemy.Enabled = true;
@@ -88,6 +89,11 @@ namespace WinFormApp1
         {
             L_Sum.Text = (Int32.Parse(L_Sum.Text) + ((CEnemy)sender).GetTokuten()).ToString();
             ((CEnemy)sender).EnemyDown();
+        }
+
+        private void PG_Jikan_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

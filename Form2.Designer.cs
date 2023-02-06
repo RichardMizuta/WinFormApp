@@ -86,6 +86,7 @@
             this.PG_Jikan.Size = new System.Drawing.Size(198, 28);
             this.PG_Jikan.TabIndex = 4;
             this.PG_Jikan.Value = 10;
+            this.PG_Jikan.Click += new System.EventHandler(this.PG_Jikan_Click);
             // 
             // P_Enemy
             // 

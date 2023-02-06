@@ -35,7 +35,7 @@ namespace WinFormApp1
                 Width = 400,
                 EnmTim = 1000,
                 Enms = 20,
-                GmTim = 10000,
+                GmTim = 15000,
             };
             fMain.FrmIni();
             fMain.Show(this);
@@ -49,7 +49,7 @@ namespace WinFormApp1
                 Width = 700,
                 EnmTim = 800,
                 Enms = 30,
-                GmTim = 15000,
+                GmTim = 20000,
             };
             fMain.FrmIni();
             fMain.Show(this);
@@ -63,7 +63,7 @@ namespace WinFormApp1
                 Width = 800,
                 EnmTim = 300,
                 Enms = 40,
-                GmTim = 20000,
+                GmTim = 30000,
             };
             fMain.FrmIni();
             fMain.Show(this);
